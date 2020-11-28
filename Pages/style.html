@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style</title>
+  <link rel="stylesheet" href="../Layout/style.css">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <a href="../Pages/index.html" class="head"> WEB PROGRAMMING PROJECT</a>
+    <!-- navigation-->
+    <nav class="navigation">
+      <a href="../Pages/index.html" id="home">Home</a>
+      <a href="../Pages/style.html" id="style">Style Demo</a>
+      <a href="../Pages/gallery.html" id="gallery">Gallery</a> 
+    </nav>
+  </header>
+  
+  <section class="container">
+    <!-- section1 start-->
+    <section>
+
+      <!-- article1 start-->
+      <article class="container-box1">
+        <h3>&lt;h1&gt; to &lt;h6&gt; - Headline Colour and Size Are All The Same<hr></h3>
+        <img src="../Images/javascript.jpg" alt="" class="img1">
+        <p>JavaScript ins leading the programming langauge pack, with Python following in second adn C# falling to fourth place, according to a SlashData report.</p>  
+        <p><a href="https://www.python.org/">Python rules data science</a>For the second half-year period in a row. Python was founded to be the second most popular programming language in terms of the
+        number of active software developer, with 9.0 million users. According to SlashData, Python added 2.2 million developers in 2019 alone, driven by the rise of data science and machine-learning technology, where the language is most commonly used.  
+        </p>
+        <img src="../Images/learning.jpg" alt="" class="img2">
+        <p>
+          According to the report, 77% of machine-learning developers and data scientists use Python, compared to 22% that use R, the other language often associated with data science. Python's rapid rise in popularity saw it outrank Java at the beginning of 2020, SlashData found.
+          Despite this, Java's continued popularity for cloud and mobile app development meant it added 1.7 million users in the past three years, with the programming language now boasting 8.0 million active users worldwide. C/C++, PHP and C# followed in close succession, with C/C++ at
+          6.3 million, PHP at 6.1 million and C# at 6.0 million. However, C# was found to have lost the most ground since 2017 after falling into fourth place.
+        </p>
+        <p>Next came Apple's programming language, Swift, with 2.4 million users, and Android's Kotlin with 2.3 million. Swift overtook Kotlin in the first half of 2020, SlashData said. The more niche language &#8364; Go, Ruby, Rust, and Lua &#8364; are still much smaller with up to 1.5 million active software developers each.</p>
+      </article>
+
+      <!-- article2 start-->
+      <article class="container-box2">
+        <h3>Table(s)<hr></h3>    <!-- make a table-->
+        <table>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+          </tr>
+          <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+            <td>Value 3</td>
+            <td>Value 4</td>
+          </tr>
+          <tr>
+            <td>Value 5</td>
+            <td>Value 6</td>
+            <td>Value 7</td>
+            <td>Value 8</td>
+          </tr>
+          <tr>
+            <td>Value 9</td>
+            <td>Value 10</td>
+            <td>Value 11</td>
+            <td>Value 12</td>
+          </tr>
+          <tr>
+            <td>Value 13</td>
+            <td>Value 14</td>
+            <td>Value 15</td>
+            <td>Value 16</td>
+          </tr>
+        </table>
+      </article>
+
+      <!-- article3 start-->
+      <article class="container-box3">
+        <h3>Comments<hr></h3>
+        <article class="container-box3-1">
+        <div>
+          <h5>oct, 202- at 8:35 am</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aspernatur dolor ipsam laudantium totam vitae deleniti iste iusto consequuntur modi!</p>
+        </div>
+        <div>
+          <h5>oct, 202- at 8:35 am</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio voluptatum rem ratione ullam ipsam eius incidunt eveniet, porro alias hic?</p>
+        </div>
+        <div>
+          <h5>oct, 202- at 8:35 am</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum ratione cupiditate doloribus assumenda nam modi maiores iusto facere laudantium!</p>
+        </div>
+        </article>
+      </article>
+
+      <!-- article4 start   Write form-->
+      <article class="container-box4" id="comment">
+        <h3>Write A Comment<hr></h3>         <!-- when press submit alertcomment begin -->
+        <form action="" onsubmit="alertcomment()" name="comm_form">
+          <input type="text" name="name"> Name (required) <br>
+          <input type="email" name="mail"> Mail (required)
+          <br>
+          <textarea name="" cols="90" rows="10" id="text"></textarea>
+          <br>
+          <input name="submit" type="submit" value="Submit Form">
+          <input type="reset" value="Reset Form">
+        </form>
+      </article>
+    </section>
+
+    <!-- aside-->
+    <aside>
+      <!-- navigation bar-->
+      <nav class="aside-nav">
+      <h3>Navigation panel<hr></h3>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank">Navigation - W3school</a><hr></li>
+        <li><a href="#comment">Navigation - Write a comment</a><hr></li>   <!-- using bookmark to go to id="comment"-->
+        <li class="sub"><a href="https://www.naver.com/" target="_blank">Navigation - Level 2</a><hr></li>
+        <li class="sub"><a href="" target="_blank">Navigation - Level 2</a><hr></li>
+        <li><a href="https://www.acmicpc.net/" target="_blank">Navigation - Level 1 </a><hr></li>
+        <li class="sub"><a href="https://www.skku.edu/skku/index.do" target="_blank">Navigation - Level 2</a><hr></li>
+        <li class="sub"><a href="https://www.instagram.com/?hl=ko" target="_blank">Navigation - Level 2</a><hr></li>
+        <li class="sub"><a href="https://www.naver.com/" target="_blank">Navigation - Level 2</a><hr></li>
+        <li class="sub"><a href="https://www.naver.com/" target="_blank">Navigation - Level 2</a><hr></li>
+        <li><a href="" target="_blank">Navigation - Level 1</a><hr></li>
+      </ul>
+      </nav>
+
+      <!-- box-1-->
+      <div class="box-1">
+        <h3><img src="../Images/coding.jpg" alt="">I want to be a great back-end programmer</h3><hr>
+        <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque.</p>  
+        <a class="more" href="https://www.acmicpc.net/">Continue reading</a>
+      
+        <!-- box-2-->
+      </div class="box-2">
+        <h3>I love coding<hr></h3>
+        <img src="../Images/programming.jpg" alt="">
+        <p>There are so many programming language today. My favorite langaugae is javascript. Using javascript i can make front-end and back-end. This language is incredible.</p>
+        <a class="more" href="https://www.acmicpc.net/">Continue reading</a>
+      </div>
+      
+      <!-- box-3-->
+      <div class="box-3">
+        <h3>What I have made<hr></h3>
+        <p>fisrt link is fake dormitory, second link is nothing Third link is doing rockscissor parper with AI.</p>
+        <ul>
+          <li><a href="../project/pages/project1.html">project1</a></li>
+          <li><a href="https://www.naver.com/">Naver</a></li>
+          <li><a href="../project/pages/project3.html">project2</a></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis perferendis itaque harum adipisci voluptas quos tempore eaque est quo.</p>
+        <a class="more" href="">Continue reading</a>
+      </div>
+    </aside>
+  </section>
+
+  <section>
+  <!-- section 2 start-->
+    <article class="container2">
+      <article class="box-1">
+        <h3>Stay In the Know!<hr></h3>
+        <h5>Please enter your email to join out mailing list</h5>
+        <form name="e_form" action="" onsubmit="alertfunction()">   <!-- When press submit alertfunction begin-->
+        <input type="email" name="email"> <br>
+        <input type="submit" value="submit" id="email_submit"> <br><br>
+        </form>
+        <a href="mailto:someone@inbox">Send us an email</a>   <!-- open inbox application in web-->
+      </article>
+      <article class="box-2">
+        <h3>Computer Maintenance<hr></h3>
+        <p>This is External link 
+        This is External link Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+      </article>
+      <article class="box-3">
+        <h3>Easy Tips To Computer Repair<hr></h3>
+        <p>This is External link Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione debitis tempora asperiores quisquam atque laborum?</p>
+      </article>
+      <article class="box-4">
+        <h3>Programming languages<hr></h3>
+        <p>These are external links. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quisquam officiis sequi?</p>
+      </article>
+    </article>
+  </section>
+  <!-- footer -->
+  <footer>
+    <p>Copyright &copy; 2020 - Web Programming Mid term Project</p>
+    <p>Good luck</p>
+  </footer>
+  <script src="../JS/style.js" type="text/javascript"></script>
+</body>
+</html>

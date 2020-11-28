@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  <link rel="stylesheet" href="../style/project3-style.css">
+  <title>Fight</title>
+</head>
+<body>  
+  <h1 style="color: red;">Fight!!!</h1>
+  <!--  select one -->
+  <section id="select">
+    <h3>Select one</h3>
+    <button id="rock" class="rps" onclick="action(id)"><i class="far fa-hand-rock" style="font-size: 5em;"></i></butto>
+    <button id="paper" class="rps" onclick="action(id)"><i class="far fa-hand-paper" style="font-size: 5em";></i></button>
+    <button id="scissor" class="rps" onclick="action(id)"><i class="far fa-hand-scissors" style="font-size: 5em;"></i></button>
+  </section>
+  
+  <!-- character & attacker sign-->
+  <section id="character">
+    <article>
+      <img class="char-img" src="../img/me.jpeg" alt="">
+      <button id="Iattacker">attacker</button>
+    </article>
+    <article>
+      <img class="char-img" src="../img/computer.jpg" alt="">
+      <button id="comattacker">attacker</button>
+    </article>
+  </section>
+
+
+  <!-- score board-->
+  <section id="board">
+    <article id="pick-box">
+      <div class="my-box">
+        <span id="I">0</span> <span class="board-me">Me</span>
+        <div id="my-pick" class="pick"></div>
+      </div>
+      <div class="my-box">
+        <span id="computer">0</span> <span class="board-com">Computer</span>
+        <div id="com-pick" class="pick"> </div>
+      </div>
+    </article>
+  </section>
+</body>
+<script type="text/javascript" src="../js/project3-index.js"></script>
+</html>

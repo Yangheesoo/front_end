@@ -1,0 +1,293 @@
+:root{   /* declare variablr in css */
+  --back:rgba(221, 221, 221, 0.801);     /* backgorund color of page*/
+  --dark:#333;
+  --light:#fff;                           
+  --yel: rgb(241, 205, 43);             /* yellow color of page*/
+  --letter:rgb(133, 132, 132);          /* letter color of page*/
+}
+
+body{
+  background-color: var(--back);
+}
+
+/* header start*/
+header{        /* fixed width: 1030px*/
+  width: 1030px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.head{
+  font-size: 45px;
+  text-decoration:none;
+  padding-left: 10px;
+  margin-right: auto;
+  width: 70px;
+  color:var(--light);
+}
+
+/* navigation start*/
+.navigation{
+  margin-top: 40px;
+}
+
+.navigation a{
+  color: var(--light);
+  margin-left: auto;
+  text-decoration:none;
+  margin-right: 60px;
+}
+
+.navigation #style{   /*highlight current page in navigation*/
+  color: var(--yel);
+  border-bottom : 1px solid var(--yel);
+  padding-bottom : 8px;
+}
+
+/* set container to display flex to make section and aside row direction*/
+.container{
+  padding-top: 30px;
+  width:1030px;
+  background-color: black;
+  color: var(--letter);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;      
+  flex-direction: row;
+}
+
+hr{
+  border-top: 1px var(--letter) dotted;  /* set all hr to dotted */
+}
+
+/* section1 start */
+.container section{
+  margin-left: 10px;
+  width:650px;
+}
+
+/* set aside width */
+aside{
+  margin-left: auto;
+  width: 300px;
+}
+
+/* article1 start */
+.container-box1 img{
+  width:100px;
+  height:100px;
+}
+.container-box1 a{
+  text-decoration: none;
+  color: var(--yel);
+}
+
+.container-box1 p{
+  text-align: justify;
+}
+.img1{
+  margin-left: 10px;
+  float: right;
+}
+.img2{
+  margin-right: 10px;
+  float:left;
+}
+
+
+/* article2 start */
+table{
+  color:white;
+  width: 650px;
+  height: 200px;
+  border-collapse: collapse;
+}
+
+th, td , tr{
+  border: 1px solid white;
+}
+
+td{
+  padding-left: 7px;
+}
+
+tr:nth-child(1){
+  text-align: center;   /* align table header center*/
+}
+
+tr:nth-child(even) >td{    /* give color to even tr*/
+  background: var(--dark);
+}
+
+tr:nth-child(odd) >td{    /* give color to odd tr*/
+  background:  rgba(126, 122, 122, 0.993);
+}
+
+/* article3 start */
+.container-box3-1{
+  display: grid;
+  grid-template-rows: 400px, 400px, 400px;
+  grid-gap: 0.5em;
+  color:white;
+}
+.container-box3 h5{
+  color:var(--yel);
+}
+
+.container-box3 p{
+  text-align: justify;
+}
+
+.container-box3-1 > div:nth-child(odd){
+  padding-left: 10px;
+  padding-right: 10px;
+  background: var(--dark);
+}
+
+.container-box3-1 > div:nth-child(even){
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(29, 28, 28, 0.733);
+}
+
+/* article4 start */
+.container-box4{
+  margin-bottom: 50px;
+}
+
+/* aside */
+aside{
+  padding-right: 10px;
+}
+aside hr{    /* set hr to dashed in aside h3*/
+  border: 1px var(--letter) dashed;  
+}
+aside p{
+  text-align: justify;
+}
+
+aside li hr{
+  border-top: 1px var(--letter) dotted;
+}
+
+/* aside nav*/
+.aside-nav{
+  background:  rgba(29, 28, 28, 0.733);
+  padding:10px;
+  margin-bottom: 40px;
+}
+.aside-nav ul{
+  list-style: url(../Images/yellow_file.gif);
+}
+.aside-nav .sub{
+  list-style: url(../Images/white_file.gif);
+  margin-left: 20px;
+}
+.aside-nav a{
+  text-decoration: none;
+  color: rgb(133, 132, 132);
+}
+.aside-nav a:hover{
+  color: var(--yel);
+}
+
+/* aside box-1*/
+aside .box-1 img{
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+
+/* aside box-2*/
+aside .box-2 img{
+  width:240px;
+  height:90px;
+}
+
+/* aside box-3*/
+aside .box-3 a{
+  text-decoration: none;
+}
+
+aside .box-3 li:nth-child(odd) >a{
+  color:var(--yel);
+}
+
+aside .box-3 li:nth-child(even) >a{
+  color:var(--letter);
+}
+
+
+.more{     /* aside link(continue reading) part*/
+  text-decoration: none;
+  padding: 3px;
+  border: 2px solid black;
+  background-color: var(--yel);
+  color: var(--light);
+}
+/* section1 end*/
+
+
+/* section2 container2 start*/
+.container2{
+  width: 1030px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.container2 h3, p{  
+  text-align: left;
+}
+.container2 .box-1{
+  width: 300px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.container2 .box-1 input{
+  width: 200px;
+}
+.container2 .box-2,.container2 .box-3,.container2 .box-4{
+  width: 200px;
+  margin-right: 20px;
+}
+
+.container2 .box-2 p,.container2 .box-3 p,.container2 .box-4 p{
+  color: var(--yel);
+}
+
+.container2 a{
+  text-decoration: none;
+  border: 5px solid var(--yel);
+  background-color: black;
+  color: var(--yel);
+}
+
+
+/* footer*/
+footer{
+  width: 1030px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(29, 29, 29);
+  color: var(--letter);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer p{
+  margin-left: 10px;
+  margin-right: 10px;
+}

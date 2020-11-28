@@ -1,0 +1,97 @@
+:root{   /* declare variablr in css */
+  --back:rgba(221, 221, 221, 0.801);     /* backgorund color of page*/
+  --dark:#333;
+  --light:#fff;                           
+  --yel: rgb(241, 205, 43);             /* yellow color of page*/
+  --letter:rgb(133, 132, 132);          /* letter color of page*/
+}
+
+body{
+  background-color: var(--back);
+}
+
+/* header start*/
+header{        /* fixed width: 1030px*/
+  width: 1030px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.head{
+  font-size: 45px;
+  text-decoration:none;
+  padding-left: 10px;
+  margin-right: auto;
+  width: 70px;
+  color:var(--light);
+}
+
+/* navigation*/
+.navigation{
+  margin-top: 40px;
+}
+
+.navigation a{
+  color: var(--light);
+  margin-left: auto;
+  text-decoration:none;
+  margin-right: 60px;
+}
+
+.navigation #gallery{  /*highlight current page in navigation*/
+  color: var(--yel);
+  border-bottom : 1px solid var(--yel);
+  padding-bottom : 8px;
+}
+
+/* section start*/
+.container1{   /* display img grid 3 x 4*/
+  width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+  background: black;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  grid-template-rows: repeat(4, minmax(240px, 1fr));
+  grid-gap: 0.5em;
+  grid-column-gap: 0.5em;
+}
+
+.container1 img{   /*fix img size*/
+  width: 247px;
+  height: 247px;
+  border: 0.5px solid black;
+}
+
+
+/* footer start*/
+footer .box-1{
+  width: 1030px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(29, 29, 29);
+  color: var(--letter);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer .box-2{
+  margin-left: auto;
+  margin-right: auto;
+  background: black;
+  width:1030px;
+  height: 20px;
+}
